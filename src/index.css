@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+@theme {
+  --color-primary: #1572d3;
+  --color-secondary: #ff9f1c;
+  --color-background: #f6f7fb;
+  --color-cardBg: #ffffff;
+  --color-textPrimary: #1a1a1a;
+  --color-textSecondary: #6c757d;
+}
+
+/* Logo slider animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+  width: calc(250px * 12);
+}
+
+.animate-pause {
+  animation-play-state: paused;
+}
